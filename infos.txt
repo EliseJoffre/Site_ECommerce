@@ -1,0 +1,4 @@
+Modules :
+- Planification (calendrier commandes, ...)
+- Facturation (processus de création et envoi de factures, rétribution agriculteur)
+- Mise en relation (livraison et récupération produits)
