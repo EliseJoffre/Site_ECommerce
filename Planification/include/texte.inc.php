@@ -6,8 +6,10 @@
 	}
 	switch ($page) {
 
-        //divers
 		case 0:	include("page/accueil.inc.php");
+			break;
+
+		case 30: include("page/planification.inc.php");
 			break;
 
 
