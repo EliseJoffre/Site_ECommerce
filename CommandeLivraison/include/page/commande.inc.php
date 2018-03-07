@@ -31,7 +31,7 @@
         </div>
 
 
-    <h1>commande</h1>
+    <h1>Passer une commande :</h1>
 
   </div>
 </div>

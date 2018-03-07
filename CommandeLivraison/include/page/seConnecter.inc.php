@@ -31,7 +31,7 @@
         </div>
 
 <div class="container col-sm-offset-2 col-sm-7">
-  <form action="index.php">
+  <form>
     <select class="form-control" id="listeConnexion">
       <option value='entreprise'>Entreprise </option>
       <option value='particulier'>particulier </option>
@@ -48,6 +48,8 @@
 
     <button type="submit" class="btn btn-primary" id="bouton">Se connecter</button>
   </form>
+</div>
+<div id="coucou">
 </div>
 
     </div>
