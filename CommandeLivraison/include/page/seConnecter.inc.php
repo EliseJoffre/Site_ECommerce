@@ -30,7 +30,6 @@
             </div>
         </div>
 
-
 <div class="container col-sm-offset-2 col-sm-7">
   <form action="index.php">
     <select class="form-control" id="listeConnexion">
