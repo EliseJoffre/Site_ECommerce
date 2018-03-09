@@ -31,6 +31,7 @@ $(function(){
     });
 });
 
+
 function addProduct(name,price){
     function add(){
         for(var i=0; i<data.total; i++){
