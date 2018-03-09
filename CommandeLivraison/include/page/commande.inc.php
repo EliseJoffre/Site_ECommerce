@@ -31,7 +31,11 @@
         </div>
 
 
+<<<<<<< HEAD
     <h1>Passer une commande :</h1>
+=======
+    <h1>Commande</h1>
+>>>>>>> Ajout catalogue
 
   </div>
 </div>

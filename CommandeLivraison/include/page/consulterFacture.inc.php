@@ -25,7 +25,11 @@
                           <li><a href="index.php?page=9">Saisir réclamations</a></li>
                           <li><a href="index.php?page=0">Accueil</a></li>
                         </ul>
+<<<<<<< HEAD
                     </div><!--/.nav-collapse -->
+=======
+                    </div>
+>>>>>>> Ajout catalogue
                 </div>
             </div>
         </div>
