@@ -1,15 +1,14 @@
-{
 
-  "idUtilisateur": "0",
+{"tableau" :
 
-  "nom": "coucou",
 
-  "prenom": "jesaispas",
 
-  "mdp": "coucou2",
+[{"idUtilisateur": "0","nom": "coucou","prenom": "jesaispas","mdp": "coucou2","login": "guigui.maurel@gmail.com","adresse": "3 rue coucou","estEntreprise":"true"},
+{"idUtilisateur": "1","nom": "coucou2","prenom": "jesaispas","mdp": "coucou2","login": "guigui.maurel@gmail.com","adresse": "3 rue coucou","estEntreprise":"true"},
+{"idUtilisateur": "2","nom": "coucou3","prenom": "jesaispas","mdp": "coucou2","login": "guigui.maurel@gmail.com","adresse": "3 rue coucou","estEntreprise":"true"}
 
-  "login": "guigui.maurel@gmail.com",
+],
 
-  "estEntreprise":"true"
-
+"info" :
+  {"idUtilisateur": "0","nom": "coucou","prenom": "jesaispas","mdp": "coucou2","login": "guigui.maurel@gmail.com","adresse": "3 rue coucou","estEntreprise":"true"}
 }
