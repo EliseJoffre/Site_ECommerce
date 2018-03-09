@@ -16,10 +16,8 @@
                     </div>
                     <div class="navbar-collapse collapse sidebar-navbar-collapse">
                         <ul class="nav navbar-nav">
-<<<<<<< HEAD
-=======
                             <li><a href="index.php?page=0">Accueil</a></li>
->>>>>>> Ajout catalogue
+
                             <li class="active"><a href="index.php?page=1">Se connecter</a></li>
                             <li><a href="index.php?page=2">Consulter catalogue</a></li>
                             <li><a href="index.php?page=3">Passer Commande</a></li>
@@ -29,18 +27,14 @@
                             <li><a href="index.php?page=7">Consulter Pénalités</a></li>
                             <li><a href="index.php?page=8">Régler Pénalités</a></li>
                             <li><a href="index.php?page=9">Saisir réclamations</a></li>
-<<<<<<< HEAD
                             <li><a href="index.php?page=0">Accueil</a></li>
-=======
->>>>>>> Ajout catalogue
+
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-        <h1> Catalogue </h1>
-=======
+
         <center><h1> Catalogue </h1></center>
 
         <ul class="products">
@@ -114,7 +108,5 @@
             <center><h3 class="total">Total: 0€</h3></center>
             <h2>Glissez pour ajouter au panier</h2>
         </div>
-
->>>>>>> Ajout catalogue
       </div>
     </div>
