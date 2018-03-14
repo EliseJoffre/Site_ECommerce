@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
     <script src="js/catalogue.js" type="text/javascript"></script>
     <script src="js/seConnecter.js" type="text/javascript"></script>
+
+    <CENTER><h1>COOP' AGRI : La coopérative agricole</h1>
+        </CENTER>
 </head>
 
 

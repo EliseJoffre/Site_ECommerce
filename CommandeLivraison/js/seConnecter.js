@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-
-
-
-
-
 	$("form").bind('submit', function(event){
      //stops browser from submitting the form
      //and redirecting.

@@ -1,6 +1,9 @@
 var data = {"total":0,"rows":[]};
 var totalCost = 0;
 
+$(document).ready(function (){
+
+
 $(function(){
     $('#cartcontent').datagrid({
         singleSelect:true
@@ -52,4 +55,14 @@ function addProduct(name,price){
     totalCost += price;
     $('#cartcontent').datagrid('loadData', data);
     $('div.cart .total').html('<h3>Total: '+totalCost.toFixed(2)+ '€</h3>');
+
+
 }
+
+
+
+$( "#commander" ).click(function() {
+    document.location.href="index.php?page=3";
+});
+
+});

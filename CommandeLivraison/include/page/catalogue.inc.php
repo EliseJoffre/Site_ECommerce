@@ -18,8 +18,8 @@
                         <ul class="nav navbar-nav">
                             <li><a href="index.php?page=0">Accueil</a></li>
 
-                            <li class="active"><a href="index.php?page=1">Se connecter</a></li>
-                            <li><a href="index.php?page=2">Consulter catalogue</a></li>
+                            <li><a href="index.php?page=1">Se connecter</a></li>
+                            <li class="active"><a href="index.php?page=2">Consulter catalogue</a></li>
                             <li><a href="index.php?page=3">Passer Commande</a></li>
                             <li><a href="index.php?page=4">Consulter Livraison</a></li>
                             <li><a href="index.php?page=5">Consulter Facture</a></li>
@@ -27,7 +27,6 @@
                             <li><a href="index.php?page=7">Consulter Pénalités</a></li>
                             <li><a href="index.php?page=8">Régler Pénalités</a></li>
                             <li><a href="index.php?page=9">Saisir réclamations</a></li>
-                            <li><a href="index.php?page=0">Accueil</a></li>
 
                         </ul>
                     </div><!--/.nav-collapse -->
@@ -105,8 +104,13 @@
                     </tr>
                     </thead>
                 </table>
+
+            <!--Double click sur quantité, devient input avec replaceWith et modifier quantite --->
             <center><h3 class="total">Total: 0€</h3></center>
             <h2>Glissez pour ajouter au panier</h2>
+            <br><br>
+            <center><button id="commander" type="button" class="btn btn-primary btn-lg">Commander</button>
+            <button id="annuler" type="button" class="btn btn-secondary btn-lg">     Annuler     </button></center>
         </div>
       </div>
     </div>

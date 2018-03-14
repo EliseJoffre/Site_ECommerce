@@ -14,6 +14,7 @@
                     </div>
                     <div class="navbar-collapse collapse sidebar-navbar-collapse">
                         <ul class="nav navbar-nav">
+                            <li><a href="index.php?page=0">Accueil</a></li>
                           <li class="active"><a href="index.php?page=1">Se connecter</a></li>
                           <li><a href="index.php?page=2">Consulter catalogue</a></li>
                           <li><a href="index.php?page=3">Passer Commande</a></li>
@@ -23,7 +24,6 @@
                           <li><a href="index.php?page=7">Consulter Pénalités</a></li>
                           <li><a href="index.php?page=8">Régler Pénalités</a></li>
                           <li><a href="index.php?page=9">Saisir réclamations</a></li>
-                          <li><a href="index.php?page=0">Accueil</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
