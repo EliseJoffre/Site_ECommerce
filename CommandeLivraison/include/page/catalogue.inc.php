@@ -36,61 +36,7 @@
 
         <center><h1> Catalogue </h1></center>
 
-        <ul class="products">
-            <li>
-                <a href="#" class="item">
-                    <img class="image_produit" src="image/carotte.jpg"/>
-                    <div>
-                        <p>Carottes</p>
-                        <p> 3.3 €/Kg</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="item">
-                    <img class="image_produit" src="image/patate.jpg"/>
-                    <div>
-                        <p>Pommes de terre</p>
-                        <p> 1.7 €/Kg</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="item">
-                    <img class="image_produit" src="image/salade.png"/>
-                    <div>
-                        <p>Salade</p>
-                        <p> 4.8 €</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="item">
-                    <img class="image_produit" src="image/fraise.jpg"/>
-                    <div>
-                        <p>Fraises</p>
-                        <p> 12.9 €/Kg</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="item">
-                    <img class="image_produit" src="image/pomme.jpg"/>
-                    <div>
-                        <p>Pomme</p>
-                        <p> 3.4 €/Kg</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="item">
-                    <img class="image_produit" src="image/cerise.jpg"/>
-                    <div>
-                        <p>Cerises</p>
-                        <p> 5.4 €/Kg</p>
-                    </div>
-                </a>
-            </li>
+        <ul class="products" id="listeProduits">
         </ul>
         <div class="cart">
             <h1>Mon panier</h1>

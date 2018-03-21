@@ -3,8 +3,30 @@ var totalCost = 0;
 
 $(document).ready(function (){
 
+    $.getJSON('JSON/categorieProduit.json', function(donnees) {
+      $.each(donnees,function(index,value){
 
-$(function(){
+        $('#listeProduits').append('<h3>'+value.libelle+'</h3>');
+        $.each(value.produits, function(index,produit){
+          let codeHTML = '<li><a href="#" class="item">'
+          codeHTML+='<img src="image/nondispo.jpg" alt="non dispo"/>'
+          codeHTML+='<a href="#" class="item">'
+          codeHTML+='<div id="produits">'
+          codeHTML+='<p>'+produit.libelle+'</p>'
+          codeHTML+='<p>'+produit.prixVente+' kg </p></div></a></li>';
+          $('#listeProduits').append(codeHTML);
+          console.log(produit.libelle);
+          console.log(produit.prixVente);
+          creationDragDrop();
+      });
+
+  });
+
+
+  });
+
+
+function creationDragDrop(){
     $('#cartcontent').datagrid({
         singleSelect:true
     });
@@ -32,8 +54,7 @@ $(function(){
             addProduct(name, parseFloat(price.split(' ')[1]));
         }
     });
-});
-
+};
 
 function addProduct(name,price){
     function add(){
@@ -64,5 +85,6 @@ function addProduct(name,price){
 $( "#commander" ).click(function() {
     document.location.href="index.php?page=3";
 });
+
 
 });
