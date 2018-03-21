@@ -12,6 +12,7 @@
 .item{
     display:block;
     text-decoration:none;
+    text-align: center;
 }
 .item img{
     border:1px solid #333;
@@ -21,6 +22,8 @@
     font-weight:bold;
     text-align:center;
     color:#c3c3c3;
+    width: 200px;
+
 }
 .cart{
     position:fixed;
@@ -51,3 +54,7 @@ h2{
     width: 200px;
     height: 150px;
 }
+
+#menu{
+    width:3000px ;
+ }

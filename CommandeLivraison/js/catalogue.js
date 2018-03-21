@@ -6,23 +6,21 @@ $(document).ready(function (){
     $.getJSON('JSON/categorieProduit.json', function(donnees) {
       $.each(donnees,function(index,value){
 
-        $('#listeProduits').append('<h3>'+value.libelle+'</h3>');
+        $('.categ').append('<h3>'+value.libelle+'</h3>');
+
         $.each(value.produits, function(index,produit){
-          let codeHTML = '<li><a href="#" class="item">'
+          let codeHTML = '<li class="item "><a href="#" >'
           if(produit.image===null ||!produit.image){
-            codeHTML+='<img src="image/nondispo.jpg" alt="non dispo"/>'
+            codeHTML+='<img src="image/nondispo.jpg" width="200px" height="200px" alt="non dispo"/>'
           }
           else{
-            codeHTML+='<img src='+produit.image+' alt="dispo"/>'
+            codeHTML+='<img src='+produit.image+'  width="200px" height="200px" alt="dispo"/>'
           }
-          codeHTML+='<a href="#" class="item">'
+          codeHTML+='<a href="#">'
           codeHTML+='<div id="produits">'
           codeHTML+='<p>'+produit.libelle+'</p>'
-          codeHTML+='<p>'+produit.prixVente+' kg </p></div></a></li>';
-          $('#listeProduits').append(codeHTML);
-          console.log(produit.libelle);
-          console.log(produit.prixVente);
-          console.log(produit.image);
+          codeHTML+='<p>'+produit.prixVente+' €/ kg </p></div></a></li>';
+          $('.products').append(codeHTML);
 
           creationDragDrop();
       });
@@ -58,7 +56,8 @@ function creationDragDrop(){
         onDrop:function(e,source){
             var name = $(source).find('p:eq(0)').html();
             var price = $(source).find('p:eq(1)').html();
-            addProduct(name, parseFloat(price.split(' ')[1]));
+            price = parseFloat(price);
+            addProduct(name, price);
         }
     });
 };
