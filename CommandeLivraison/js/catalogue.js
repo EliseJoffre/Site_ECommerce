@@ -9,7 +9,12 @@ $(document).ready(function (){
         $('#listeProduits').append('<h3>'+value.libelle+'</h3>');
         $.each(value.produits, function(index,produit){
           let codeHTML = '<li><a href="#" class="item">'
-          codeHTML+='<img src="image/nondispo.jpg" alt="non dispo"/>'
+          if(produit.image===null ||!produit.image){
+            codeHTML+='<img src="image/nondispo.jpg" alt="non dispo"/>'
+          }
+          else{
+            codeHTML+='<img src='+produit.image+' alt="dispo"/>'
+          }
           codeHTML+='<a href="#" class="item">'
           codeHTML+='<div id="produits">'
           codeHTML+='<p>'+produit.libelle+'</p>'
@@ -17,6 +22,8 @@ $(document).ready(function (){
           $('#listeProduits').append(codeHTML);
           console.log(produit.libelle);
           console.log(produit.prixVente);
+          console.log(produit.image);
+
           creationDragDrop();
       });
 
