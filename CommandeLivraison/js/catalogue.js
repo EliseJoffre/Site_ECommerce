@@ -5,9 +5,7 @@ $(document).ready(function (){
 
     $.getJSON('JSON/categorieProduit.json', function(donnees) {
       $.each(donnees,function(index,value){
-
-        $('.categ').append('<h3>'+value.libelle+'</h3>');
-
+        $('.products').prepend('<h3>'+value.libelle+'</h3>');
         $.each(value.produits, function(index,produit){
           let codeHTML = '<li class="item "><a href="#" >'
           if(produit.image===null ||!produit.image){
@@ -17,13 +15,13 @@ $(document).ready(function (){
             codeHTML+='<img src='+produit.image+'  width="200px" height="200px" alt="dispo"/>'
           }
           codeHTML+='<a href="#">'
-          codeHTML+='<div id="produits">'
           codeHTML+='<p>'+produit.libelle+'</p>'
-          codeHTML+='<p>'+produit.prixVente+' €/ kg </p></div></a></li>';
-          $('.products').append(codeHTML);
+          codeHTML+='<p>'+produit.prixVente+' €/ kg </p></a></li>';
+          $('#listeProduits').append(codeHTML);
 
           creationDragDrop();
       });
+
 
   });
 

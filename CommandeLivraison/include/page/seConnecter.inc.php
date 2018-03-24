@@ -18,6 +18,7 @@
                           <li class="active"><a href="index.php?page=1">Se connecter</a></li>
                           <li><a href="index.php?page=2">Consulter catalogue</a></li>
                           <li><a href="index.php?page=3">Passer Commande</a></li>
+                          <li><a href="index.php?page=10">Afficher Commande</a></li>
                           <li><a href="index.php?page=4">Consulter Livraison</a></li>
                           <li><a href="index.php?page=5">Consulter Facture</a></li>
                           <li><a href="index.php?page=6">Régler facture</a></li>
@@ -33,13 +34,13 @@
 <div class="container col-sm-offset-2 col-sm-7">
   <form>
     <select class="form-control" id="listeConnexion">
-      <option value='entreprise'>Entreprise </option>
-      <option value='particulier'>particulier </option>
+      <option value='Entreprise'>Entreprise </option>
+      <option value='Particulier'>Particulier </option>
     </select>
 
     <div class="form-group">
       <label for="mail">Entrez votre adresse mail</label>
-      <input type="email" class="form-control" id="mail" placeholder="Entrez votre email ici">
+      <input type="login" class="form-control" id="login" placeholder="Entrez votre email ici">
     </div>
     <div class="form-group">
       <label for="exampleInputPassword1">Password</label>

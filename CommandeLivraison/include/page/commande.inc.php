@@ -1,3 +1,5 @@
+<script src="js/scriptVerifConnexion.js" type="text/javascript"></script>
+
 <div class="container">
     <div class="row">
         <div class="col-sm-2">
@@ -17,6 +19,7 @@
                           <li class="active"><a href="index.php?page=1">Se connecter</a></li>
                           <li><a href="index.php?page=2">Consulter catalogue</a></li>
                           <li><a href="index.php?page=3">Passer Commande</a></li>
+                          <li><a href="index.php?page=10">afficher Commande</a></li>
                           <li><a href="index.php?page=4">Consulter Livraison</a></li>
                           <li><a href="index.php?page=5">Consulter Facture</a></li>
                           <li><a href="index.php?page=6">Régler facture</a></li>

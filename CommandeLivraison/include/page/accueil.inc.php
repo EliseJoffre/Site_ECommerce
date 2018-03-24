@@ -18,6 +18,7 @@
                           <li ><a href="index.php?page=1">Se connecter</a></li>
                           <li><a href="index.php?page=2">Consulter catalogue</a></li>
                           <li><a href="index.php?page=3">Passer Commande</a></li>
+                          <li><a href="index.php?page=10">Afficher Commande</a></li>
                           <li><a href="index.php?page=4">Consulter Livraison</a></li>
                           <li><a href="index.php?page=5">Consulter Facture</a></li>
                           <li><a href="index.php?page=6">Régler facture</a></li>

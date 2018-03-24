@@ -35,6 +35,8 @@
 
 		case 9:	include("page/saisirReclamation.inc.php");
 			break;
+		case 10: include("page/afficherCommande.inc.php");
+			break;
 
 		default: include("page/accueil.inc.php");
     }

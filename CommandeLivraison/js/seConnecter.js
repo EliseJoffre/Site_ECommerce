@@ -1,24 +1,41 @@
 $(document).ready(function(){
-
 	$("form").bind('submit', function(event){
      //stops browser from submitting the form
      //and redirecting.
      event.preventDefault();
-		 $.getJSON('JSON/utilisateur.json', function(donnees) {
-			 			if($("#mail").val()==donnees.login && $("#exampleInputPassword1").val()==donnees.mdp){
 
-							document.location.href="index.php?page=3";
-					}
-					else{
-						event.preventDefault();
-						alert('erreur, mot de passe ou login incorrect');
-						$('#mail').val('');
-						$('#exampleInputPassword1').val('');
-					}
- 		  });
-     //use jquery form plugin to submit via ajax here or do it by hand
+		 let login, mdp;
+     login = $("#login").val();
+     mdp = $("#exampleInputPassword1").val();
+		 categorie = $('#listeConnexion').val();
+		 $.getJSON('JSON/comptes.json', function(donnees) {
+			 console.log(donnees)
+			 	let identifiant = -1;
+				donnees.forEach(function(element){
+	        if(element.login === login && element.pass === mdp && ((!(element.societe)&&categorie=='Particulier')||(!(element.personne)&&categorie=='Entreprise'))){
+	          identifiant = element.id;
+	        }
+	      });
+				//identifiant=1; !!!!!!!!!!!!!!!! A REMETTRE QUAND ON VEUT TESTER POUR LE CLIENT AVEC L'IDENTIFIANT 1
+
+				if(identifiant!=-1){
+	        $.session.set('connecte', identifiant)
+	        document.location.href= "index.php?page=10";
+	      }
+				else
+	      {
+	        afficherErreur("Login ou mdp incorrect")
+	      }
+
 });
+function afficherErreur(erreur){
+	let error = $('#error-connexion')
+	error.text(erreur);
+	alert('Erreur lors de la connexion, mot de passe, login ou catégorie incorrect');
+	$('#exampleInputPassword1').val('');
+}
 
 
 
 });
+})
