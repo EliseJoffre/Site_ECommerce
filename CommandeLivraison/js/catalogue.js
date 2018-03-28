@@ -2,12 +2,12 @@ var data = {"total":0,"rows":[]};
 var totalCost = 0;
 
 $(document).ready(function (){
-
+    unBool=true
     $.getJSON('JSON/categorieProduit.json', function(donnees) {
-      $.each(donnees,function(index,value){
-        $('.products').prepend('<h3>'+value.libelle+'</h3>');
+      donnees.forEach(function(value){
+        $('#listeProduits').append('<div class="categorieDeProd"><h3>'+value.libelle+'</h3></div>');
         $.each(value.produits, function(index,produit){
-          let codeHTML = '<li class="item "><a href="#" >'
+          let codeHTML = '<li class="item"><a href="#" >'
           if(produit.image===null ||!produit.image){
             codeHTML+='<img src="image/nondispo.jpg" width="200px" height="200px" alt="non dispo"/>'
           }
@@ -21,6 +21,8 @@ $(document).ready(function (){
 
           creationDragDrop();
       });
+      $('#listeProduits').append('</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>');
+
 
 
   });

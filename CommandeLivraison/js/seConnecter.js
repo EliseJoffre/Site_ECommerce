@@ -12,9 +12,14 @@ $(document).ready(function(){
 			 console.log(donnees)
 			 	let identifiant = -1;
 				donnees.forEach(function(element){
-	        if(element.login === login && element.pass === mdp && ((!(element.societe)&&categorie=='Particulier')||(!(element.personne)&&categorie=='Entreprise'))){
-	          identifiant = element.id;
+	        if(element.login === login && element.pass === mdp && ((!(element.societe)&&categorie=='Particulier'))){
+	          identifiant = element.personne.id;
 	        }
+
+					if (element.login === login && element.pass === mdp && ((!(element.personne)&&categorie=='Entreprise'))){
+						identifiant=element.societe.id;
+					}
+
 	      });
 				//identifiant=1; !!!!!!!!!!!!!!!! A REMETTRE QUAND ON VEUT TESTER POUR LE CLIENT AVEC L'IDENTIFIANT 1
 

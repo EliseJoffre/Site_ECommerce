@@ -19,15 +19,38 @@
 
     <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
     <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
-    <script src="js/catalogue.js" type="text/javascript"></script>
     <script src="js/seConnecter.js" type="text/javascript"></script>
     <script src="js/afficherCommande.js" type="text/javascript"></script>
 
     <script src="js/jquery.session.js" type="text/javascript"></script>
-    <button id='deconnexion'>Se déconnecter </button>
-    <CENTER><h1>COOP' AGRI : La coopérative agricole</h1>
-        </CENTER>
+
+
 </head>
 
 
 <body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="index.php?page=2">Consulter catalogue</a></li>
+          <li><a href="index.php?page=3">Passer Commande</a></li>
+          <li><a href="index.php?page=10">Afficher Commande</a></li>
+          <li><a href="index.php?page=4">Consulter Livraison</a></li>
+          <li><a href="index.php?page=5">Consulter Facture</a></li>
+          <li><a href="index.php?page=6">Régler facture</a></li>
+          <li><a href="index.php?page=7">Consulter Pénalités</a></li>
+          <li><a href="index.php?page=8">Régler Pénalités</a></li>
+
+        </ul>
+        <form class="navbar-form navbar-right inline-form">
+          <div class="form-group">
+            <a href="index.php?page=1">Se connecter</a>
+
+            <button id='deconnexion'>Se déconnecter </button>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <CENTER><h1>COOP' AGRI : La coopérative agricole</h1>
+        </CENTER>

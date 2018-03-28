@@ -6,9 +6,10 @@
 
         <center><h1> Catalogue </h1></center>
 
-        <div class="categ"></div>
+        <div class="categ">
         <ul class="products" id="listeProduits">
         </ul>
+        </div>
         <div class="cart">
             <h1>Mon panier</h1>
 
