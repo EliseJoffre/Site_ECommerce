@@ -1,5 +1,4 @@
 
-<script src="js/catalogue.js" type="text/javascript"></script>
 <script src="js/scriptVerifConnexion.js" type="text/javascript"></script>
 <div class="container">
     <div class="row">
